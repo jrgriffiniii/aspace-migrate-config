@@ -5,7 +5,7 @@ require 'yaml'
 class ASpaceMigrationCLI < Thor
   def self.upstream_locale_file(language = 'en')
     current_path = File.dirname(__FILE__)
-    File.join(current_path, 'archivesspace', 'frontend', 'config', 'locales', "#{language}.yml")
+    File.join(current_path, 'archivesspace', 'common', 'locales', "#{language}.yml")
   end
 
   def self.upstream_enum_locale_file(language = 'en')
